@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400&family=Caveat+Brush&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "AnniesHandwriting";
+  src: url("../public/AnniesHandwriting.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Caveat Brush", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  height: 100vh;
+  /* background-color: yellow; */
+  backgroundcolor: "#97FFE5";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+
+.fancy-link-instagram {
+  font-weight: bold;
+  --b: 0.1em; /* the thickness of the line */
+  --c: #8a3ab9; /* the color */
+
+  color: #0000;
+  cursor: pointer;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #000 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+
+.fancy-link-facebook {
+  font-weight: bold;
+  --b: 0.1em; /* the thickness of the line */
+  --c: #4267b2; /* the color */
+
+  color: #0000;
+  cursor: pointer;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #000 0) 0%
+      calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+      no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear,
+    background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+
+.carousel.carousel-slider .control-arrow {
+  /* display: none; */
+  color: white;
+  padding: 35px;
+  opacity: 1;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 1;
+}
+
+.fancy-link-instagram:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+}
+
+.fancy-link-facebook:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+}
+
+.dark-red {
+  background-color: #b32f0e;
+}
+
+.light-red {
+  background-color: #ff6842;
+}
+
+.medium-red {
+  background-color: #ff5429;
+}
+
+.dark-green {
+  background-color: #00b378;
+}
+
+.light-green {
+  background-color: #29ffb9;
+}
+
+.medium-blue {
+  background-color: #97ffe5;
+}
+
+.light-blue {
+  background-color: #e3fff8;
+}
+
+input,
+textarea {
+  background-color: white;
+}
